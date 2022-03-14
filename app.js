@@ -8,8 +8,8 @@ let when = [
   "during my lunch",
   "while I was praying"
 ];
-function generater(red){
-    return Math.floor(Math.random() * who.length)
+function generater(arr){
+    return Math.floor(Math.random() * arr.length)
 }
 
 // var pool = who[Math.floor(Math.random() * who.length)];
@@ -17,4 +17,5 @@ function generater(red){
 // var third = what[Math.floor(Math.random() * what.length)];
 // var fourth = when[Math.floor(Math.random() * when.length)];
 
-console.log(`${who[generater(who)]} ${action[generater(action)]} ${what[generater(what)]} ${when[generater(when)]}`)
+let p = `${who[generater(who)]} ${action[generater(action)]} ${what[generater(what)]} ${when[generater(when)]}`
+document.getElementById("marcus").innerHTML = p;
